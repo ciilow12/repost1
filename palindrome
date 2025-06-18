@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class palindrome {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a word:");
+
+        while (true) {
+            String word = input.nextLine();
+
+            char firstname = word.charAt(0);
+            char lastname = word.charAt(word.length() - 1);
+
+            if (firstname == lastname) {
+                System.out.println(word + " is palindrome");
+            } else {
+                System.out.println(word + " isn`t palindrome");
+                break;
+            }
+
+            System.out.println("Enter another word:");
+
+        }
+    }
+}
+
+
